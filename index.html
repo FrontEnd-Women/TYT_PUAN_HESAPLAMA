@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="tyt_puan_hesaplama.css">
+    <title>TYT PUAN HESAPLAMA UYGULAMASI</title>
+</head>
+
+<body>
+    
+    <div class="TYT_Hesapla">
+        <h2 class="font-effect-outline">TYT Puan Hesaplama Uygulaması</h2>
+        <form>
+            <label for="OBP">Okul Puanınızı Giriniz : </label>
+            <input class="giris" type="text" id="OBP" name="OBP"><br><br>
+
+            <label for="turceDogruSayisi">Türkçe Doğru Sayısı :</label>
+            <input class="giris" type="text" id="turceDogruSayisi" name="turceDogruSayisi"><br><br>
+            <label for="turceYanlisSayisi">Türkçe Yanlış Sayısı :</label>
+            <input class="giris" type="text" id="turceYanlisSayisi" name="turceYanlisSayisi"><br><br>
+
+            <label for="MatDogruSayisi">Matematik Doğru Sayısı :</label>
+            <input class="giris" type="text" id="MatDogruSayisi" name="MatDogruSayisi"><br><br>
+            <label for="MatYanlisSayisi">Matematik Yanlış Sayısı :</label>
+            <input class="giris" type="text" id="MatYanlisSayisi" name="MatYanlisSayisi"><br><br>
+
+            <label for="FenDogruSayisi">Fen Doğru Sayısı :</label>
+            <input class="giris" type="text" id="FenDogruSayisi" name="FenDogruSayisi"><br><br>
+            <label for="FenYanlisSayisi">Fen Yanlış Sayısı :</label>
+            <input class="giris" type="text" id="FenYanlisSayisi" name="FenYanlisSayisi"><br><br>
+
+            <label for="SosyalDogruSayisi">Sosyal Doğru Sayısı :</label>
+            <input class="giris" type="text" id="SosyalDogruSayisi" name="SosyalDogruSayisi"><br><br>
+            <label for="SosyalYanlisSayisi">Sosyal Yanlış Sayısı :</label>
+            <input class="giris" type="text" id="SosyalYanlisSayisi" name="SosyalYanlisSayisi"><br><br>
+            <button type="button" onclick="puanHesapla()">Hesapla</button>
+            
+
+        </form>
+        <div id="sonuc"></div>
+
+    </div>
+    <script src="tyt_puan_hesaplama.js"></script>
+</body>
+
+</html>

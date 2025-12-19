@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(30deg, #000000, #fc6c0c);
+}
+
+.TYT_Hesapla{
+border-style: inset;
+border-color: rgb(141, 80, 50);
+position: absolute;
+text-align-last: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+justify-content: center;
+}
+input{
+      color: white;
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background: linear-gradient(30deg, #000000, #fc6c0c);
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+button{
+    
+    position: relative;
+    padding: 14px 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #720d0d, #000000);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 183, 255, 0.4);
+    overflow: hidden;
+    justify-content: center;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(240, 55, 55, 0.8), 0 0 40px rgba(102, 4, 4, 0.4);
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all 0.5s ease;
+ }
+ button:active::before {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+    transition: 0s;
+  }
+
+  h2{
+
+    font-family: "Sofia", sans-serif;
+    padding-bottom: 20px;
+  }
+#sonuc {
+    
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 20rem;
+    
+  }
